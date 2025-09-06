@@ -1,4 +1,6 @@
-import { Heading } from './styles/components/Heading';
+import { Heading } from './components/Heading';
+import { Container } from './components/Container';
+import { Logo } from './components/Logo';
 
 import './styles/theme.css';
 import './styles/global.css';
@@ -6,13 +8,13 @@ import './styles/global.css';
 export function App() {
   return (
     <>
-      <Heading />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias autem
-        deserunt, aperiam obcaecati pariatur cum corrupti quisquam eligendi
-        nobis totam, repellat vel officia? Corporis dolorum esse fugiat iusto ea
-        architecto!
-      </p>
+      <Container>
+        <Logo />
+      </Container>
+
+      <Container>
+        <Heading>MENU</Heading>
+      </Container>
     </>
   );
 }
